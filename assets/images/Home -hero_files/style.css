@@ -1,0 +1,272 @@
+/* =========== Common Css Start =========== */
+:root {
+    --primary-font: "Josefin Sans", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+    --text-color: #11161e;
+    --dark-hover-color: #151a32;
+    --light-color: #ffffff;
+    --primary-color-light: #ff6f61;
+    --primary-color-dark: #ff5645;
+    --paragraph-color: #444444;
+    --bg-color-dark: #f1f1f1;
+    --bg-color-light: #f1f3f4;
+    --dark-color: #000000;
+    --border-color:#8c8c8c;
+    --shadow-22: 0 3px 10px 0px rgba(var(--dark-color), 0.08);
+    --shadow-32: 0 0 50px 0px rgba(var(var(--dark-hover-color)), 0.1);
+    --shadow-42: 0 5px 30px 0px rgba(var(var(--text-color)), 0.08);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+body {
+    font-family: var(--primary-font);
+}
+p {
+    font-family: var(--secondary-font);
+}
+.text-justify {
+    text-align: justify;
+}
+/* =========== Common Css End =========== */
+
+/* =========== Top Bar Section Css Start =========== */
+#top_bar {
+    background-color: var(--dark-hover-color);
+    color: var(--light-color);
+    padding: 11px 0;
+}
+#top_bar .top_bar_left p i{
+    color: var(--primary-color-light);
+    margin-right: 4px;
+}
+#top_bar .top_bar_left p{
+    line-height: 26px;
+}
+#top_bar .top_bar_left p span{
+    color: var(--primary-color-light);
+    font-family: var(--primary-font);
+}
+#top_bar .top_bar_right ul:first-child li{
+    border-right: 2px solid var(--border-color);
+    padding: 0 20px;
+}
+#top_bar a{
+    color : var(--light-color);
+    padding: 0 10px;
+}
+#top_bar a:hover{
+    color: var(--primary-color-light);
+}
+#top_bar ul li .drop-down{
+    background-color: var(--dark-hover-color);
+    color: var(--light-color);
+    border: none;
+}
+/* =========== Top Bar Section Css End =========== */
+
+/* =========== Nav Bar Section Css Start =========== */
+#navbarNavDropdown ul li a{
+    color: var(--dark-hover-color);
+}
+#navbarNavDropdown ul li a:hover{
+    color: var(--primary-color-light);
+}
+#nav_bar .icons .icon{
+    margin: 0 10px;
+}
+#nav_bar .icons a{
+    color: var(--dark-hover-color);
+}
+#nav_bar .icons a:hover{
+    color: var(--primary-color-light);
+}
+/* =========== Nav Bar Section Css End =========== */
+
+/* =========== Hero area Css End =========== */
+#banner{
+    height: 600px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#banner h6{
+    color: #1D1D1D;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+}
+#banner h1{
+    color: #1D1D1D;
+    font-family: var(--primary-font);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px; /* 115.625% */
+}
+#banner p{
+    color: #1D1D1D;
+    font-family: var(--secondary-font);
+    line-height: 28px; /* 175% */
+    margin-bottom: 25px;
+}
+#banner a{
+    padding: 16px 30px;
+    color: #000;
+    border: 1px solid #000;
+}
+#banner a:hover{
+    border: none;
+    transition: 0.5s;
+    color: var(--light-color);
+    background-color: var(--primary-color-light);
+}
+/* =========== Hero area Css End =========== */
+
+/* =========== Item area Css End =========== */
+#items{
+    padding: 70px 0;
+}
+#items .column{
+    display: flex;
+    flex-direction: column;
+}
+/* =========== Item area Css End =========== */
+
+/* =========== New Arrival area Css End =========== */
+#new_arrive h2{
+    padding: 10px 0;
+    color: #11161e;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px; /* 127.778% */
+}
+#new_arrive .card{
+    margin-bottom: 60px;
+}
+/* =========== New Arrival area Css End =========== */
+
+#bg{
+    height: 600px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bg h3{
+    color: var(--light-color);
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px; /* 127.778% */
+}
+#bg p{
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    margin-bottom: 30px;
+}
+#bg a{
+    padding: 16px 30px;
+    color: var(--light-color);
+    border: 1px solid #FFF;
+}
+#bg a:hover{
+    border: none;
+    transition: 0.5s;
+    background-color: var(--primary-color-light);
+}
+/* =========== Footer Bar Section Css Start =========== */
+.footer{
+    padding: 97px 0;
+    color : var(--light-color);
+    background-color: var(--dark-hover-color);
+}
+.footer .row{
+    border-bottom: 1px solid var(--light-color);
+    padding: 50px 0;
+}
+.footer .sec-1 ul li a{
+    border: 1px solid var(--dark-hover-color);
+    padding: 13px 15px;
+    background-color: var(--light-color);
+    color: var(--dark-hover-color);
+}
+.footer .sec-1 ul li a:hover{
+    color: var(--light-color);
+    background-color: var(--primary-color-light);
+}
+.footer h4{
+    padding-bottom: 20px;
+    color: var(--Comon-Colot, #FFF);
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px; /* 141.667% */
+}
+.footer .sec-3 ul{
+    display: flex;
+    flex-direction: column;
+}
+.footer .sec-3 ul li i{
+    color: var(--primary-color-light);
+    border: none;
+    gap: 10px;
+}
+.footer .sec-3 ul li a{
+    color: var(--light-color);
+}
+.footer ul li{
+    color: var(--light-color);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+.footer .sec-2 ul li a{
+    color: var(--light-color);
+}
+.footer .sec-2 ul li a:hover{
+    color: var(--primary-color-light);
+}
+/* Footer section end */
+
+footer{
+    padding: 20px 0;
+    height: 70px;
+    margin-top: -2px;
+    color: var(--light-color);
+    background-color: var(--paragraph-color);
+}
+/* =========== Footer Bar Section Css End =========== */
